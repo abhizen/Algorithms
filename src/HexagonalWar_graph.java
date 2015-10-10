@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * Created by abhinit on 10/9/15.
  */
-public class horizontalwar_graph<T> {
+public class HexagonalWar_graph<T> {
     private Graph<Integer> romanGraph = null;
     private Graph<Integer> persianGraph = null;
     private int dimension;
@@ -11,7 +11,7 @@ public class horizontalwar_graph<T> {
     private ArrayList<Integer> lowerBoundaryList = null;
     private ArrayList<Integer> leftBoundaryList = null;
 
-    horizontalwar_graph(int dimension){
+    HexagonalWar_graph(int dimension){
         this.dimension = dimension;
         this.romanGraph = new Graph<>();
         this.persianGraph = new Graph<>();
@@ -276,7 +276,7 @@ public class horizontalwar_graph<T> {
             int romanVillageCount = 0;
 
 
-        horizontalwar_graph  war = new horizontalwar_graph(dimension);
+            HexagonalWar_graph  war = new HexagonalWar_graph(dimension);
 
             for(int i=0;i<moves;i++){
                 x = in.nextInt();
